@@ -1,0 +1,11 @@
+.changed-width-height{
+    display: flex; /* kisan: These flex properties used to fill the table area to the rest of the div after nav */
+    flex-flow: column; /* kisan: These flex properties used to fill the table area to the rest of the div after nav */
+    width: 100vw;
+    height: 100vh;
+}
+
+.fill-rest-height{
+    flex: 1 1 auto; /* kisan: These flex properties used to fill the table area to the rest of the div after nav */
+    margin-bottom: 10px;
+}

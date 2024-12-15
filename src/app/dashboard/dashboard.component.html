@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid changed-width-height">
     <!-- kisan: This container and container fluid is used to make a container where all element will present conainer-fluid sets max width-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!-- This nav bar code copied from bootstrap-->
         <div class="container-fluid">
@@ -9,7 +9,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav" style="position: absolute; right: 1%;">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
@@ -20,16 +20,19 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li> -->
+                    <li> 
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Employee</button>
                     </li>
 
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="card">
+    <div class="card fill-rest-height"> <!-- kisan: These flex properties used to fill the table area to the rest of the div after nav */-->
         <!-- kisan: This card and card body used to make cards to section the contents. Card is the container-->
         <div class="card-body"> <!-- This card-body is a element inside the container-->
-            <table class="table table-striped"> <!--kisan: This is table conatiner copied from bootstrap directly-->
+            <table class="table table-striped fill-rest-height"> <!--kisan: This is table conatiner copied from bootstrap directly-->
                 <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -38,6 +41,7 @@
                         <th scope="col">Email</th>
                         <th scope="col">Mobile</th>
                         <th scope="col">Salary</th>
+                        <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -48,6 +52,8 @@
                         <td>mark</td>
                         <td>1212121</td>
                         <td>12332</td>
+                        <td><button class="btn btn-info">Edit</button></td>
+                        <td><button class="btn btn-danger">Delete</button></td>
                     </tr>
                     <tr>
                         <th scope="row">2</th>
@@ -56,6 +62,8 @@
                         <td>fat</td>
                         <td>mdo</td>
                         <td>mdo</td>
+                        <td><button class="btn btn-info">Edit</button></td>
+                        <td><button class="btn btn-danger">Delete</button></td>
                     </tr>
                     <tr>
                         <th scope="row">3</th>
@@ -65,6 +73,8 @@
                         <td>Larry the Bird</td>
                         <td>twitter</td>
                         <td>mdo</td>
+                        <td><button class="btn btn-info">Edit</button></td>
+                        <td><button class="btn btn-danger">Delete</button></td>
                     </tr>
                     <tr>
                         <th scope="row">4</th>
@@ -73,6 +83,8 @@
                         <td>mdo</td>
                         <td>mdo</td>
                         <td>mdo</td>
+                        <td><button class="btn btn-info">Edit</button></td>
+                        <td><button class="btn btn-danger">Delete</button></td>
                     </tr>
                 </tbody>
             </table>

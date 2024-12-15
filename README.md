@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## BeforeRunningApplication
 
-To run the application, after cloning run `npm run build` to generate the node modules.
+To run the application, after cloning run `npm install` to generate the node modules.
 
 ## Development server
 
