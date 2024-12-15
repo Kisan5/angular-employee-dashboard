@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { AppModuleServiceService } from '../services/app-module-service.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,14 +10,13 @@ import { Component } from '@angular/core';
   styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
-  http!:HttpClient;
   respondedEmployeeRecordsArray: any;
-
-  constructor(http:HttpClient){
-    this.http=http;
+  appService:AppModuleServiceService;
+  constructor(appService:AppModuleServiceService){
+    this.appService=appService;
     this.getEmployees();
   }
   getEmployees(){
-    this.http.get("http://localhost:3000/employees").subscribe(item => this.respondedEmployeeRecordsArray=item);
+    this.appService.getEmployees().subscribe(item => this.respondedEmployeeRecordsArray=item);
   }
 }
