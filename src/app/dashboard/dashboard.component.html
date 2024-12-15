@@ -29,10 +29,11 @@
             </div>
         </div>
     </nav>
-    <div class="card fill-rest-height"> <!-- kisan: These flex properties used to fill the table area to the rest of the div after nav */-->
+    <div class="card fill-rest-height stop-overflow-scroll-without-bar"> <!-- kisan: These flex properties used to fill the table area to the rest of the div after nav */-->
+    <!-- kisan: stop-overflow-scroll-without-bar used to stop overflow and add scroll without bar-->
         <!-- kisan: This card and card body used to make cards to section the contents. Card is the container-->
         <div class="card-body"> <!-- This card-body is a element inside the container-->
-            <table class="table table-striped fill-rest-height"> <!--kisan: This is table conatiner copied from bootstrap directly-->
+            <table class="table fill-rest-height"> <!--kisan: This is table conatiner copied from bootstrap directly-->
                 <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -41,21 +42,21 @@
                         <th scope="col">Email</th>
                         <th scope="col">Mobile</th>
                         <th scope="col">Salary</th>
-                        <th scope="col">Action</th>
+                        <th scope="col" colspan="2">Action</th> <!-- kisan: This colspan used to aquire 2 columns as 2 botton displayed below. -->
                     </tr>
                 </thead>
-                <tbody>
+                <tbody *ngFor="let emp of respondedEmployeeRecordsArray">
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>mark</td>
-                        <td>1212121</td>
-                        <td>12332</td>
+                        <th scope="row">{{emp.id}}</th>
+                        <td>{{emp.firstName}}</td>
+                        <td>{{emp.lastName}}</td>
+                        <td>{{emp.email}}</td>
+                        <td>{{emp.mobile}}</td>
+                        <td>{{emp.salary}}</td>
                         <td><button class="btn btn-info">Edit</button></td>
                         <td><button class="btn btn-danger">Delete</button></td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <th scope="row">2</th>
                         <td>Jacob</td>
                         <td>Thornton</td>
@@ -67,10 +68,10 @@
                     </tr>
                     <tr>
                         <th scope="row">3</th>
-                        <td colspan="2" class="text-center">Larry the Bird</td>
+                        <td colspan="2" class="text-center">Larry the Bird</td> -->
                         <!-- text-center used to show that taking 2 column space-->
                         <!--kisan: This colspan can be used to take 2 columns for one column value-->
-                        <td>Larry the Bird</td>
+                        <!-- <td>Larry the Bird</td>
                         <td>twitter</td>
                         <td>mdo</td>
                         <td><button class="btn btn-info">Edit</button></td>
@@ -85,7 +86,7 @@
                         <td>mdo</td>
                         <td><button class="btn btn-info">Edit</button></td>
                         <td><button class="btn btn-danger">Delete</button></td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
         </div>

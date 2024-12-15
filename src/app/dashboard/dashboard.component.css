@@ -9,3 +9,8 @@
     flex: 1 1 auto; /* kisan: These flex properties used to fill the table area to the rest of the div after nav */
     margin-bottom: 10px;
 }
+
+.stop-overflow-scroll-without-bar{
+    overflow: scroll;
+    scrollbar-width: none;
+}
