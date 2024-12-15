@@ -1,0 +1,81 @@
+<div class="container-fluid">
+    <!-- kisan: This container and container fluid is used to make a container where all element will present conainer-fluid sets max width-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!-- This nav bar code copied from bootstrap-->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Employee Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style="position: absolute; right: 1%;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="card">
+        <!-- kisan: This card and card body used to make cards to section the contents. Card is the container-->
+        <div class="card-body"> <!-- This card-body is a element inside the container-->
+            <table class="table table-striped"> <!--kisan: This is table conatiner copied from bootstrap directly-->
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Mobile</th>
+                        <th scope="col">Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>mark</td>
+                        <td>1212121</td>
+                        <td>12332</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>fat</td>
+                        <td>mdo</td>
+                        <td>mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2" class="text-center">Larry the Bird</td>
+                        <!-- text-center used to show that taking 2 column space-->
+                        <!--kisan: This colspan can be used to take 2 columns for one column value-->
+                        <td>Larry the Bird</td>
+                        <td>twitter</td>
+                        <td>mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Larry the Bird</td>
+                        <td>twitter</td>
+                        <td>mdo</td>
+                        <td>mdo</td>
+                        <td>mdo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
