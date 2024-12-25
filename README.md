@@ -1,8 +1,10 @@
 # EmployeeDashboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12, node 18.20.5 and npm 10.8.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12, node 18.20.5, npm 10.8.2 and JSON server 0.17.4(Auto Increment ID available in this).
 
 ## BeforeRunningApplication
+
+First run the json server by `json-server --watch db.json` command. and port number should be 3000.
 
 To run the application, after cloning run `npm install` to generate the node modules.
 

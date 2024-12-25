@@ -22,7 +22,7 @@
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                     </li> -->
                     <li> 
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Employee</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Employee</button> <!-- This data-bs-toggle and data-bs-traget used to connect the modal with this button check bootstrap element-->
                     </li>
 
                 </ul>
@@ -89,6 +89,50 @@
                     </tr> -->
                 </tbody>
             </table>
+        </div>
+    </div>
+    <!-- Modal --> <!--kisan: It is a bootstrap popup/dialog box/modal form to fill details and opened by a button-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <!-- This modal-dialog-centered modal-dialog-scrollable used to keep the modal centred and overflow scroll inside-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Employee Details</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="clearFormFields()"></button>
+                </div>
+                <div class="modal-body mb-0 stop-overflow-scroll-without-bar"> <!-- used this class to disable scrollbar-->
+                    <form> <!-- Bootstap form used to provide fields in modal-->
+                        <div class="mb-3">
+                            <label for="exampleInputFirstname1" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="exampleInputFirstname1" [(ngModel)]="fName" name="firstname"> <!-- Kisan: To use ngModel need to import formsModule and if using inside forms then need to use name attribute or [ngModelOptions]="{standalone: true}" otherwise error. This name attribute can contain any name, this not affect the connection between this and ts file variable. inside [(ngModel)] attribute correct variable name as per ts file variable name needs to be present-->
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputLastname1" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="exampleInputLastname1" [(ngModel)]="lName" name="lastname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" [(ngModel)]="email" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputMobile1" class="form-label">Mobile</label>
+                            <input type="tel" class="form-control" id="exampleInputMobile1" [(ngModel)]="mobile" name="mobile">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputSalary1" class="form-label">Salary</label>
+                            <input type="tel" class="form-control" id="exampleInputSalary1" [(ngModel)]="salary" name="salary"> <!-- kisan: used tel here as number displaying increase decrease button on field-->
+                        </div>
+                        <!-- <button type="submit" class="btn btn-primary">Submit</button> commented this as used the modal buttons in footer below-->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" id="closePopup" class="btn btn-secondary"
+                        data-bs-dismiss="modal" (click)="clearFormFields('addEmployee')">Close</button> future reference if want to clear different forms in one function-->
+                        <button type="button" id="closePopup" class="btn btn-secondary"
+                        data-bs-dismiss="modal" (click)="clearFormFields()">Close</button>
+                    <button type="button" class="btn btn-primary" (click)="createEmployee()">Add</button> <!-- kisan: this click event is not (onClick) it is (click) only-->
+                </div>
+            </div>
         </div>
     </div>
 </div>

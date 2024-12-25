@@ -1,15 +1,15 @@
 {
   "employees": [
     {
-      "id": "1",
+      "id": 1,
       "firstName": "Kisan",
       "lastName": "Senapati",
       "email": "kisansenapati@gmail.com",
       "mobile": "1234567890",
-      "salary": "10000"
+      "salary": 10000
     },
     {
-      "id": "2",
+      "id": 2,
       "firstName": "Mark",
       "lastName": "Otto",
       "email": "mark@gmail.com",
@@ -17,7 +17,7 @@
       "salary": 20000
     },
     {
-      "id": "3",
+      "id": 3,
       "firstName": "Jacob",
       "lastName": "Thronton",
       "email": "jacob@gmail.com",
@@ -25,7 +25,7 @@
       "salary": 56156
     },
     {
-      "id": "4",
+      "id": 4,
       "firstName": "Larry the Bird",
       "lastName": "Thomas",
       "email": "thomas@gmail.com",
@@ -33,7 +33,7 @@
       "salary": 17267
     },
     {
-      "id": "5",
+      "id": 5,
       "firstName": "Logan",
       "lastName": "Paul",
       "email": "logan@gmail.com",
@@ -41,7 +41,7 @@
       "salary": 12233
     },
     {
-      "id": "6",
+      "id": 6,
       "firstName": "Milan",
       "lastName": "Senapati",
       "email": "milan@gmail.com",
@@ -49,7 +49,7 @@
       "salary": 412312
     },
     {
-      "id": "7",
+      "id": 7,
       "firstName": "Suresh",
       "lastName": "Yadav",
       "email": "suresh@gmail.com",
@@ -57,7 +57,7 @@
       "salary": 12312
     },
     {
-      "id": "8",
+      "id": 8,
       "firstName": "Rajesh",
       "lastName": "Kapoor",
       "email": "rajesh@gmail.com",
@@ -65,7 +65,7 @@
       "salary": 123121
     },
     {
-      "id": "9",
+      "id": 9,
       "firstName": "Ramesh",
       "lastName": "Sen",
       "email": "ramesh@gmail.com",
@@ -73,12 +73,20 @@
       "salary": 23234
     },
     {
-      "id": "10",
+      "id": 10,
       "firstName": "Rohit",
       "lastName": "Kumar",
       "email": "rohit@gmail.com",
       "mobile": "234342343",
       "salary": 12123
+    },
+    {
+      "firstName": "Rajkumar",
+      "lastName": "Rao",
+      "email": "rajkumar@gmail.com",
+      "mobile": "1231213523",
+      "salary": "12413545",
+      "id": 11
     }
   ]
 }
